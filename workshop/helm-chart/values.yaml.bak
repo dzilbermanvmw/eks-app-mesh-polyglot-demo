@@ -7,7 +7,8 @@ detail:
   namespace: workshop
   name: proddetail
 
-    repository: 133767301050.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/catalog_detail
+  image:
+    repository: 534007913719.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/catalog_detail
     tag: "1.0"
     pullPolicy: Always
   
@@ -96,7 +97,7 @@ catalog:
   name: prodcatalog
 
   image:
-    repository: 133767301050.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/product_catalog
+    repository: 534007913719.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/product_catalog
     tag: "1.0"
     pullPolicy: Always
 
@@ -182,7 +183,7 @@ frontend:
   lbType: alb
 
   image:
-    repository: 133767301050.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/frontend_node
+    repository: 534007913719.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/frontend_node
     tag: "3.0"
     pullPolicy: Always
 
