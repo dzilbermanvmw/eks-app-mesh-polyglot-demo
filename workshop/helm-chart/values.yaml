@@ -6,7 +6,7 @@ detail:
   replicaCount: 1
   namespace: workshop
   name: proddetail
-
+  image:
     repository: 133767301050.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/catalog_detail
     tag: "1.0"
     pullPolicy: Always
