@@ -6,8 +6,9 @@ detail:
   replicaCount: 1
   namespace: workshop
   name: proddetail
+
   image:
-    repository: 133767301050.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/catalog_detail
+    repository: 596032479580.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/catalog_detail
     tag: "1.0"
     pullPolicy: Always
   
@@ -67,7 +68,7 @@ detail:
       cpu: 500m
       memory: 512Mi
     requests:
-      cpu: 3.0m
+      cpu: 200m
       memory: 512Mi
     # We usually recommend not to specify default resources and to leave this as a conscious
     # choice for the user. This also increases chances charts run on environments with little
@@ -96,7 +97,7 @@ catalog:
   name: prodcatalog
 
   image:
-    repository: 133767301050.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/product_catalog
+    repository: 596032479580.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/product_catalog
     tag: "1.0"
     pullPolicy: Always
 
@@ -182,8 +183,8 @@ frontend:
   lbType: alb
 
   image:
-    repository: 133767301050.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/frontend_node
-    tag: "3.0"
+    repository: 596032479580.dkr.ecr.us-east-1.amazonaws.com/eks-app-mesh-demo/frontend_node
+    tag: "2.0"
     pullPolicy: Always
 
   nameOverride: ""
